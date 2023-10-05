@@ -1,7 +1,7 @@
 # xkcd-Comic-App
 Application in vue that allows you to explore and rate comics from the xkcd api interactively.
 
-![Comics](https://github.com/Kar3njul1eth/xkcd-Comic-App/image-readme.png)
+![Comics](image-readme.png)
 ## About 📖
 This app allows you to browse and rate comics from the xkcd API interactively. Enjoy an intuitive and fun experience when discovering and evaluating your favorite comics.
 
