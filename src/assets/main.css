@@ -12,10 +12,11 @@
   --comic-image-max-width: 300px;
   --comic-shadow: inset 1px 2px 17px 2px rgba(63,135,205,0.64);
   --comic-image-margin-bottom: 1.8rem;
-  --comic-button-gap: 10px;
+  --comic-button-gap: 25px;
+  --comic-button-mobile-gap: 15px;
   --load-comic-padding: 1.125rem;
   --load-comic-button-transition: all 0.2s ease;
-  --load-comic-button-border-radius: 28px;
+  --load-comic-button-border-radius: 15px;
   --load-comic-button-background: rgba(144, 194, 243, 0.5);
   --load-comic-button-height: 56px;
   --load-comic-button-transition: all 0.3s ease;

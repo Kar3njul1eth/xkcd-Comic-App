@@ -5,10 +5,10 @@
     <StarRating class="comic-rate" v-model:currentRating="userRating" :maxRating="5"/><span class="comic-rate__text">Rate this Comic</span>
     <div class="comic-container-button">
       <a class="load-comic-button" @click="PreviousComic">
-        <span class="load-comic-button__text">Prev</span>
-        <svg class="load-comic-button__icon" width="13px" height="10px" viewBox="0 0 13 10">
+        <svg class="load-comic-button__icon" width="13px" height="10px" viewBox="0 0 13 10" style="margin-right: 5px;">
           <path d="M12,5 L2,5 M2,5 L6,1 M2,5 L6,9"></path>
         </svg>
+        <span class="load-comic-button__text">Prev</span>
       </a>
       <a class="load-comic-button" @click="NextComic">
         <span class="load-comic-button__text">Next</span>
@@ -103,9 +103,7 @@ export default {
 
 @media (max-width: 600px) {
   .comic-container-button {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: var(--comic-button-mobile-gap);
   }
 }
 a {
