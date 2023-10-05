@@ -5,8 +5,7 @@ Application to explore and rate xkcd comics interactively.
 - [Visual studio code](https://code.visualstudio.com/)
 - [Git](https://git-scm.com/)
 - [Yarn](https://yarnpkg.com/getting-started/install)
-- [Pinia] (https://pinia.vuejs.org/getting-started.html)
-
+- [Pinia](https://pinia.vuejs.org/getting-started.html)
 
 ## Customize configuration
 See [Vite Configuration Reference](https://vitejs.dev/config/).
