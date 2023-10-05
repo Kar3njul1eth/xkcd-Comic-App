@@ -1,12 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Libre+Baskerville:wght@700&family=PT+Sans+Narrow&display=swap');
+
+:root {
+  --app-container-desktop-max-width: 1200px;
+  --app-container-mobile-max-width: 600px;
+  --comic-container-margin: 12.5rem;
+  --comic-container-max-width: 300px;
+  --comic-container-height: 150px;
+  --comic-title-margin: 2.5rem 0;
+  --comic-rate-text-margin: 2.5rem;
+  --comic-image-max-width: 300px;
+  --comic-shadow: inset 1px 2px 17px 2px rgba(63,135,205,0.64);
+  --comic-image-margin-bottom: 1.8rem;
+  --comic-button-gap: 10px;
+  --load-comic-padding: 1.125rem;
+  --load-comic-button-transition: all 0.2s ease;
+  --load-comic-button-border-radius: 28px;
+  --load-comic-button-background: rgba(144, 194, 243, 0.5);
+  --load-comic-button-height: 56px;
+  --load-comic-button-transition: all 0.3s ease;
+  --load-comic-button-font-size: 1rem;
+  --load-comic-button-line-height: 18px;
+  --load-comic-button-font-weight: 900;
+  --load-comic-button-letter-spacing: 0.25em;
+  --load-comic-button-text-transform: uppercase;
+  --load-comic-button-vertical-align: middle;
+}
+
 #app {
-  max-width: 1200px;
+  max-width: var(--app-container-max-width);
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 767px) {
-    max-width: 600px;
+    max-width: var(--app-container-mobile-max-width);
     margin: 0 auto;
     padding: 0;
     display: block;
