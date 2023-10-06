@@ -4,7 +4,6 @@
 :root {
   --app-container-desktop-max-width: 1200px;
   --app-container-mobile-max-width: 600px;
-  --comic-container-margin: 12.5rem;
   --comic-container-max-width: 300px;
   --comic-container-height: 150px;
   --comic-title-margin: 2.5rem 0;
