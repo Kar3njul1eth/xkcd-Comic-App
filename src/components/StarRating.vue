@@ -4,7 +4,9 @@
       v-for="star in maxRating"
       :key="star"
       @click="setRating(star)"
-      :class="{ active: star <= currentRating }"
+      @mouseover="hoverRating(star)"
+      @mouseleave="resetHoverRating"
+      :class="{ active: star <= currentRating || star <= hoveredRating }"
     >
       ★
     </span>
@@ -26,9 +28,20 @@ export default defineComponent({
     },
   },
   emits: ['update:currentRating'],
+  data() {
+    return {
+      hoveredRating: 0,
+    };
+  },
   methods: {
     setRating(rating) {
       this.$emit('update:currentRating', rating);
+    },
+    hoverRating(rating) {
+      this.hoveredRating = rating;
+    },
+    resetHoverRating() {
+      this.hoveredRating = 0;
     },
   },
 });
@@ -48,6 +61,6 @@ export default defineComponent({
 }
 
 .star-rating-container .active {
-  color: #90C2F3;
+  color: #E2E832;
 }
 </style>

@@ -21,4 +21,5 @@ describe('App Component - renders ComicViewer component', () => {
 
     expect(wrapper.findComponent(ComicViewer).exists()).toBe(true);
   });
+  expect(wrapper.findComponent(ComicViewer).exists()).toBe(false);
 });

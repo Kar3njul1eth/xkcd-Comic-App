@@ -68,9 +68,9 @@
 
 
 ## Conclusions
-One of the first challenges I encountered was determining which API to use and how to allow the comic to be changed. The project's shared link included two different API links, one referencing all comics and another for a specific one. After careful consideration, I decided which one to use and also defined the structure for my project. My goal was to adhere to best practices and use technologies that I am most familiar with, those that I consider most suitable for this type of project.
+A significant challenge was dealing with CORS issues. Previously, I had only experienced this in local environments and could temporarily resolve it with browser settings or an extension. However, in this case, I needed to find a definitive solution for both local and production environments. I spent time reading extensive documentation and watching videos until I grasped the possible solutions. Ultimately, I configured a proxy in my Vite configuration file to grant legitimacy to requests and inform the browser that this request should come from the development server and is a valid request. For the production environment, I created a redirection rule through a '_redirects' file.
 
-An interesting aspect was imagining and defining the user interface design. Unlike other projects where I often work with predefined designs, this time I had the freedom to imagine and create it from scratch. This allowed me to express my personal style and preferences.
+Additionally, another challenge arose when determining which API to use and how to allow comic switching. The shared project link included two different API endpoints, one referencing all comics and another for a specific one. After careful consideration, I decided which one to use and also defined the structure for my project. My goal was to adhere to best practices and use technologies I am most familiar with, those that I consider most suitable for this type of project
 
 ## References
 
